@@ -70,16 +70,33 @@ layout: default
 {% include disqus.html %}
 
 <nav class="read-next">
-  {% if page.next %}
-    <a class="read-next-newer" href="{{ page.next.url | prepend: site.baseurl }}">
-      <span class="read-next-label">Newer Post</span>
-      <span class="read-next-title">{{ page.next.title | xml_escape }}</span>
-    </a>
-  {% endif %}
-  {% if page.previous %}
-    <a class="read-next-older" href="{{ page.previous.url | prepend: site.baseurl }}">
-      <span class="read-next-label">Older Post</span>
-      <span class="read-next-title">{{ page.previous.title | xml_escape }}</span>
-    </a>
-  {% endif %}
+  <h2 class="read-next-label">Other posts you might enjoy</h2>
+  <ul>
+    {% comment %}
+      If this post's front matter specifies any recommended posts, list those
+      recommendations first. Put the site-wide recommendations after the
+      post-specific recommendations.
+    {% endcomment %}
+    {% if page.recommended_posts.size > 0 %}
+      {% comment %}
+        Once Jekyll adopts Liquid 4, replace the hackery below with `concat`.
+        http://stackoverflow.com/a/40264338/929066
+      {% endcomment %}
+      {% assign recommended_posts = page.recommended_posts %}
+      {% for post in site.recommended_posts %}
+        {% assign recommended_posts = recommended_posts | push: post %}
+      {% endfor %}
+    {% else %}
+      {% assign recommended_posts = site.recommended_posts %}
+    {% endif %}
+
+    {% assign urls_to_recommend = recommended_posts | where_exp:"post","post.url != page.url" | map:"url" | uniq %}
+    {% for url in urls_to_recommend limit:5 %}
+      {% for post in site.posts %}
+        {% if url == post.url %}
+          <li><a class="read-next-title" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title | xml_escape }}">{{ post.title | xml_escape }}</a>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
 </nav>

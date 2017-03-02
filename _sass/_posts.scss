@@ -276,7 +276,6 @@ iframe,
   color: #999;
 }
 
-
 #disqus_thread {
   margin-bottom: 28px;
 
@@ -285,56 +284,28 @@ iframe,
   }
 }
 
-
 .read-next {
-  @include breakpoint {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
-}
 
-.read-next-newer,
-.read-next-older {
-  display: block;
-
-  @include breakpoint {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 50%;
+  li {
+    margin-bottom: 15px;
   }
-}
 
-.read-next-newer {
-  @include breakpoint {
-    padding-right: 10px;
+  a {
+    border-bottom: 2px solid #ddd;
+    color: #000;
+
+    &:hover {
+      border-bottom-color: #bbb;
+    }
   }
-}
-.read-next-older {
-  @include breakpoint {
-    padding-left: 10px;
-    text-align: right;
-  }
-}
-
-.read-next-newer + .read-next-older {
-  margin-top: 28px;
-
-  @include breakpoint {
-    margin-top: 0;
-  }
-}
-
-.read-next-title {
-  display: inline-block;
-  font-weight: bold;
-  width: 100%;
 }
 
 .read-next-label {
+  display: block;
   color: #aaa;
   font-style: italic;
 }

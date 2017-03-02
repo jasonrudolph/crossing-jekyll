@@ -49,6 +49,12 @@ authors:
   lewiscarroll:
     name: Lewis Carroll
 
+# The "read next" posts to recommend at the bottom of each post
+recommended_posts:
+  - url: /welcome-to-jekyll/
+  - url: /test-1-2-3/
+  - url: /advice-from-a-caterpillar/
+  - url: /the-pool-of-tears/
 
 # Extra Open Graph and Twitter Cards settings for social sharing
 
