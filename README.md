@@ -4,7 +4,7 @@ A [Jekyll](https://jekyllrb.com/) theme.
 
 ![Screenshot](screenshot.png?raw=true)
 
-[Demo](https://barepants.github.io/crossing-jekyll/) × [Download](https://github.com/barepants/crossing-jekyll/archive/gh-pages.zip)
+[Demo](https://jasonrudolph.github.io/crossing-jekyll/) × [Download](https://github.com/jasonrudolph/crossing-jekyll/archive/gh-pages.zip)
 
 Demo images are from [Unsplash](https://unsplash.com/).
 

@@ -8,7 +8,7 @@ tagline: Thoughts, stories and ideas.
 description:
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "https://barepants.github.io"
+url: "https://jasonrudolph.github.io"
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: "/crossing-jekyll"
@@ -28,7 +28,7 @@ nav:
   - title: "Home"
     url:   "/crossing-jekyll/"
   - title: "Github"
-    url:   "https://github.com/barepants/crossing-jekyll"
+    url:   "https://github.com/jasonrudolph/crossing-jekyll"
 
 
 # The links in the site footer
@@ -36,7 +36,7 @@ footer_links:
   - title: "RSS"
     url:   "/crossing-jekyll/feed.xml"
   - title: "GitHub"
-    url:   "https://github.com/barepants/crossing-jekyll"
+    url:   "https://github.com/jasonrudolph/crossing-jekyll"
 
 
 # Author information
