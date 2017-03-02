@@ -1,6 +1,10 @@
 .site-header {
   position: relative;
 
+  .container {
+    padding-bottom: 28px;
+  }
+
   &:after {
     background-color: rgba(#000, .03);
     content: "";
