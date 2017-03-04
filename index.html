@@ -2,13 +2,12 @@
 layout: default
 ---
 
-
-{% if site.image and paginator.page == 1 %}
+{% if site.image %}
   <div class="cover-image"><img src="{{ site.image }}" alt="" /></div>
 {% endif %}
 
 <div class="post-list">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
       <header class="post-header">
         <h2 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | xml_escape }}</a></h2>
@@ -34,28 +33,3 @@ layout: default
     </article>
   {% endfor %}
 </div>
-
-{% if paginator.previous_page or paginator.next_page %}
-  <nav class="pagination clearfix">
-    {% if paginator.previous_page %}
-      <a class="pagination-newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: 'index.html', '' }}">
-        <div>
-          <svg viewBox="0 0 9 14">
-            <path d="M7.293 14l1.414-1.414L3.12 7l5.587-5.586L7.293 0l-7 7 7 7z"/>
-          </svg>
-        </div>
-        Newer Posts
-      </a>
-    {% endif %}
-    {% if paginator.next_page %}
-      <a class="pagination-older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
-        <div>
-          <svg viewBox="0 0 9 14">
-            <path d="M1.707 14L.293 12.586 5.88 7 .292 1.414 1.707 0l7 7-7 7z"/>
-          </svg>
-        </div>
-        Older Posts
-      </a>
-    {% endif %}
-  </nav>
-{% endif %}

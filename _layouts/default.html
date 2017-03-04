@@ -9,15 +9,9 @@
     <div class="container">
       {% include site-nav.html %}
 
-      {% if paginator %}
-        <h1 class="site-title">
-          <a href="{{ site.baseurl }}/">{{ site.title | xml_escape }}</a>
-        </h1>
-      {% else %}
-        <div class="site-title">
-          <a href="{{ site.baseurl }}/">{{ site.title | xml_escape }}</a>
-        </div>
-      {% endif %}
+      <h1 class="site-title">
+        <a href="{{ site.baseurl }}/">{{ site.title | xml_escape }}</a>
+      </h1>
 
       {% if site.tagline and paginator %}
         <div class="site-tagline">

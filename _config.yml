@@ -65,12 +65,6 @@ og_image:
 # twitter:site. Your Twitter username without "@"
 twitter_site:
 
-
-# http://jekyllrb.com/docs/pagination/
-paginate: 5
-paginate_path: page/:num/
-gems: [jekyll-paginate]
-
 permalink: /:title/
 markdown: kramdown
 kramdown:

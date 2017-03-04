@@ -21,7 +21,7 @@
 
   {% if page.excerpt %}
     {% assign description = page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 160 %}
-  {% elsif site.description and paginator %}
+  {% elsif site.description %}
     {% assign description = site.description | xml_escape %}
   {% endif %}
   {% if description %}
@@ -34,7 +34,7 @@
 
   {% if page.image %}
     {% assign image = page.image %}
-  {% elsif paginator and site.image %}
+  {% elsif site.image %}
     {% assign image = site.image %}
   {% elsif site.og_image %}
     {% assign image = site.og_image %}
