@@ -14,15 +14,6 @@ layout: default
     {% endif %}
     <h1 class="post-title" itemprop="headline">{{ page.title | xml_escape }}</h1>
     <ul class="x-separated-list x-separated-list-meta">
-      {% if author %}
-        <li class="post-byline">
-          {% if author.website %}
-            <a href="{{ author.website }}">{{ author.name }}</a>
-          {% else %}
-            {{ author.name }}
-          {% endif %}
-        </li>
-      {% endif %}
       <li class="post-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {{ page.date | date: "%B %-d, %Y" }}
