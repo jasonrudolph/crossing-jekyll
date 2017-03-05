@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "A Caucus-Race and a Long Tale"
-author: lewiscarroll
 ---
 
 They were indeed a queer-looking party that assembled on the bank—the birds with draggled feathers, the animals with their fur clinging close to them, and all dripping wet, cross, and uncomfortable.

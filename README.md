@@ -30,20 +30,12 @@ Post cover image:
 To have author bylines and bio at bottom of posts, add configuration like the following in `_config.yml`:
 
 ```yml
-authors:
-  johndoe:
-    name: John Doe
-    website: https://github.com/barepants
-    bio: An awesome bio # Author info at bottom of post only shows if bio exists
-    avatar: /crossing-jekyll/images/avatar.jpg
+author:
+  name: John Doe
+  website: https://github.com/barepants
+  bio: An awesome bio # Author info at bottom of post only shows if bio exists
+  avatar: /crossing-jekyll/images/avatar.jpg
 ```
-
-and specify the author in the Front Matter of posts:
-
-    ---
-    author: johndoe
-    ---
-
 
 ## Social meta tags
 

@@ -40,14 +40,11 @@ footer_links:
 
 
 # Author information
-authors:
-  johndoe:
-    name: John Doe
-    website: https://github.com/barepants
-    bio: An awesome bio # Author info at bottom of post only shows if bio exists
-    avatar: /crossing-jekyll/images/avatar.jpg
-  lewiscarroll:
-    name: Lewis Carroll
+author:
+  name: John Doe
+  website: https://github.com/barepants
+  bio: An awesome bio # Author info at bottom of post only shows if bio exists
+  avatar: /crossing-jekyll/images/avatar.jpg
 
 # The "read next" posts to recommend at the bottom of each post
 recommended_posts:

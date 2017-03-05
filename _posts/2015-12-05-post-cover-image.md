@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Post Cover Image"
-author: johndoe
 image: /crossing-jekyll/images/post-image.jpg
 ---
 

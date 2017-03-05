@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-author: johndoe
 categories: jekyll update
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Advice from a Caterpillar"
-author: lewiscarroll
 recommended_posts:
 - url: /down-the-rabbit-hole/
 - url: /the-pool-of-tears/
