@@ -12,7 +12,7 @@
   word-wrap: break-word;
 
   @include breakpoint {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .post-list &:last-child {
