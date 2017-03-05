@@ -53,16 +53,11 @@
 .post-excerpt {
   color: #aaa;
   font-style: italic;
-  max-height: 56px;
   overflow: hidden;
 
   // To not hide overflowing italic text
   margin: 0 -5px;
   padding: 0 5px;
-
-  @include breakpoint {
-    max-height: 60px;
-  }
 }
 
 .post-content {
