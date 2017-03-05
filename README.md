@@ -32,7 +32,6 @@ To have author bylines and bio at bottom of posts, add configuration like the fo
 ```yml
 author:
   name: John Doe
-  website: https://github.com/barepants
   bio: An awesome bio # Author info at bottom of post only shows if bio exists
   avatar: /crossing-jekyll/images/avatar.jpg
 ```

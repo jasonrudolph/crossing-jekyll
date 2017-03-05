@@ -41,18 +41,10 @@ layout: default
 {% if author.bio %}
   <div class="post-author {% if author.avatar %}has-avatar{% endif %}">
     {% if author.avatar %}
-      {% if author.website %}
-        <a href="{{ author.website }}" class="post-author-avatar" aria-hidden="true" style="background-image: url({{ author.avatar }})"></a>
-      {% else %}
-        <div class="post-author-avatar" style="background-image: url({{ author.avatar }})"></div>
-      {% endif %}
+      <div class="post-author-avatar" style="background-image: url({{ author.avatar }})"></div>
     {% endif %}
     <div class="post-author-name">
-      {% if author.website %}
-        <a href="{{ author.website }}">{{ author.name }}</a>
-      {% else %}
-        {{ author.name }}
-      {% endif %}
+      {{ author.name }}
     </div>
     <p class="post-author-bio">{{ author.bio }}</p>
   </div>
